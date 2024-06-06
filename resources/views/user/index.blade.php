@@ -43,7 +43,7 @@ User
                             <th>Nama Penjual</th>
                             <th>Email</th>
                             <th>Level</th>
-                            <th>Password</th>
+                            {{-- <th>Password</th> --}}
                             <th>Pilihan</th>
                         </tr>
                     </thead>
@@ -60,9 +60,9 @@ User
                                 <td>
                                     {{$item -> level}}
                                 </td>
-                                <td>
+                                {{-- <td>
                                     {{str_repeat('*', strlen($item-> password))}}
-                                </td>
+                                </td> --}}
                                 <td>
                                     <a class="btn btn-outline-info dropdown-toggle dropdown-icon"
                                         data-toggle="dropdown">Pilihan </a>
@@ -84,7 +84,7 @@ User
                             <th>Nama Penjual</th>
                             <th>Email</th>
                             <th>Level</th>
-                            <th>Password</th>
+                            {{-- <th>Password</th> --}}
                             <th>Pilihan</th>
                         </tr>
                     </tfoot>

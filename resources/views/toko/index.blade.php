@@ -43,6 +43,9 @@ Toko
                             <th>Nama Toko</th>
                             <th>Kategori</th>
                             <th>Pemilik</th>
+                            <th>Jam Operasi</th>
+                            <th>Hari Buka</th>
+                            <th>Icon Toko</th>
                             <th>Status</th>
                             <th>Pilihan</th>
                         </tr>
@@ -53,6 +56,9 @@ Toko
                             <td>{{$item -> nama_toko}}</td>
                             <td>{{$item -> kategori_toko}}</td>
                             <td>{{$item -> user-> name}}</td>
+                            <td>{{$item -> jam_buka}} - {{$item-> jam_tutup}}</td>
+                            <td>{{$item -> hari_buka}}</td>
+                            <td><img src="{{asset('storage/image/toko/' . $item-> icon_toko)}}" /></td>
                             <td>
                                 @if($item-> aktif == FALSE)
                                     <span class="badge badge-danger">Toko Non-Aktif</span>
@@ -80,6 +86,9 @@ Toko
                             <th>Nama Toko</th>
                             <th>Kategori</th>
                             <th>Pemilik</th>
+                            <th>Jam Operasi</th>
+                            <th>Hari Buka</th>
+                            <th>Icon Toko</th>
                             <th>Status</th>
                             <th>Pilihan</th>
                         </tr>

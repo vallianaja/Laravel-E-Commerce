@@ -40,7 +40,7 @@ class TokoController extends Controller
             'hari_buka' => 'required',
             'jam_buka' => 'required',
             'jam_tutup' => 'required',
-            'icon_toko' => "required|mimes:png, jpeg, jpg, svg|max:5048"
+            'icon_toko' => "required"
 
         ]);
         if($validasi->fails())
